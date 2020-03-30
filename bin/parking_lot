@@ -18,4 +18,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 # 
 # Important: Above commands is just examples, please modify to suit your requirement as necessary
 
-eval "(erl -pa ../parking_lot/_build/default/lib/parking_lot/ebin/ -s main start)"
+FILE=$1
+if [ -f "$FILE" ]; then
+    eval "(erl -noshell -pa parking_lot/_build/default/lib/parking_lot/ebin/ -s main start $FILE)"
+else
+    eval "(erl -noshell -pa parking_lot/_build/default/lib/parking_lot/ebin/ -s main start \"\")"
+fi

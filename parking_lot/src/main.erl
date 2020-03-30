@@ -1,6 +1,11 @@
 -module(main).
 
--export([start/0]).
+-export([start/1]).
 
-start() ->
-    application:ensure_all_started(parking_lot).
+start(FileName) ->
+    application:ensure_all_started(parking_lot),
+    if FileName =/= [''] ->
+        spawn(fun() -> fread:start(FileName) end);
+    true -> ok
+    end,
+    read:read_stdin().
