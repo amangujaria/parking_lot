@@ -1,0 +1,12 @@
+# Add script to:
+# * Install dependencies
+# * Build/Compile
+# * Run Test Suit to validate
+#
+# After this is run, bin/parking_lot
+# should Just Work.
+cd ../parking_lot/
+./rebar3 compile
+./rebar3 eunit --module=spot --cover
+./rebar3 cover --verbose
+cd -
