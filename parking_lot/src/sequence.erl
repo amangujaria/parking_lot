@@ -12,7 +12,7 @@ start_link() ->
 init([]) ->
     {ok, #state{}}.
 
-handle_call({create_lot, Capacity}, From, #state{vacant = Spots}) ->
+handle_call({create_lot, Capacity}, From, #state{vacant = Spots}) when is_integer(Capacity) ->
     NewSpots = lists:map(fun(Id) -> list_to_atom("spot" ++ integer_to_list(Id)) end, lists:seq(length(Spots) + 1, length(Spots) + Capacity)),
     {reply, created, #state{vacant = Spots ++ NewSpots}};
 
@@ -26,7 +26,7 @@ handle_call({return, Spot}, From, #state{vacant = Vacant} = State) ->
     {reply, returned, State#state{vacant = lists:usort([Spot | Vacant])}};
 
 handle_call(Msg, From, State) ->
-    {reply, ok, State}.
+    {reply, erroneous_msg, State}.
 
 handle_cast(Msg, State) ->
     {noreply, State}.

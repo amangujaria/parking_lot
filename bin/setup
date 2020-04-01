@@ -6,8 +6,15 @@
 # After this is run, bin/parking_lot
 # should Just Work.
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+PLT=~/.dialyzer_plt
+if [ -f "$PLT" ]; then
+    dialyzer $DIR/../parking_lot/src/*.erl
+else
+    dialyzer --build_plt --apps kernel stdlib erts mnesia eunit
+    dialyzer $DIR/../parking_lot/src/*.erl
+fi
 cd $DIR/../parking_lot/
 ./rebar3 compile
-./rebar3 eunit --module=spot,fread,read,sequence --cover
+./rebar3 eunit --module=spot,fread,read,sequence,utils --cover
 ./rebar3 cover --verbose
 cd -
