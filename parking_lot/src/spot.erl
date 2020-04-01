@@ -8,8 +8,8 @@
 -export([start_link/1, init/1, occupied/3, vacant/3, generate_event/2]).
 
 -record(state, {id :: spot_id(),
-                registration :: string(),
-                colour :: string(),
+                registration :: string() | undefined,
+                colour :: string() | undefined,
                 status :: atom()}).
 
 start_link(Id) ->

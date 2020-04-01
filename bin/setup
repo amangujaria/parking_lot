@@ -8,6 +8,6 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd $DIR/../parking_lot/
 ./rebar3 compile
-./rebar3 eunit --module=spot,fread --cover
+./rebar3 eunit --module=spot,fread,read,sequence --cover
 ./rebar3 cover --verbose
 cd -

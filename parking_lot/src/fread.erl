@@ -7,14 +7,16 @@ start(FileName) ->
     read(File).
 
 read(File) ->
-    Txt = file:read(File,1024 * 1024),
-    if Txt =/= eof ->
-        {ok, Data} = Txt,
-        Lines = string:tokens(Data, "\n"),
-        lists:map(fun(Line) ->
-            io:format("Line: ~p~n", [Line]),
-            Line
-        end, Lines),
-        read(File);
-    true -> ok
+    Txt = file:read_line(File),
+    case Txt of
+        {ok, "\n"} -> read(File);
+        {ok, Line} ->
+            [FuncStr | Tail] = string:tokens(Line -- "\n", " "),
+            if FuncStr == "create_parking_lot" ->
+                read:process(FuncStr, Tail);
+            true ->
+                spawn(fun() -> read:process(FuncStr, Tail) end)
+            end,
+            read(File);
+        _ -> ok
     end.

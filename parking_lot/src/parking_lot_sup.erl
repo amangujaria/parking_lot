@@ -29,7 +29,9 @@ init([]) ->
     SupFlags = #{strategy => one_for_all,
                  intensity => 1,
                  period => 1},
-    ChildSpecs = [{spot_sup, {spot_sup, start_link, []}, permanent, brutal_kill, supervisor, [spot_sup]}],
+    ChildSpecs = [
+        {spot_sup, {spot_sup, start_link, []}, permanent, brutal_kill, supervisor, [spot_sup]},
+        {sequence, {sequence, start_link, []}, permanent, brutal_kill, worker, [sequence]}],
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions
