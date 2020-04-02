@@ -12,24 +12,24 @@ start_link() ->
 init([]) ->
     {ok, #state{}}.
 
-handle_call({create_lot, Capacity}, From, #state{vacant = Spots}) when is_integer(Capacity) ->
+handle_call({create_lot, Capacity}, _From, #state{vacant = Spots}) when is_integer(Capacity) andalso Capacity > 0 ->
     NewSpots = lists:map(fun(Id) -> list_to_atom("spot" ++ integer_to_list(Id)) end, lists:seq(length(Spots) + 1, length(Spots) + Capacity)),
     {reply, created, #state{vacant = Spots ++ NewSpots}};
 
-handle_call(find_empty, From, #state{vacant = []} = State) ->
+handle_call(find_empty, _From, #state{vacant = []} = State) ->
     {reply, not_available, State};
 
-handle_call(find_empty, From, #state{vacant = [Spot | Tail]} = State) ->
+handle_call(find_empty, _From, #state{vacant = [Spot | Tail]} = State) ->
     {reply, Spot, State#state{vacant = Tail}};
 
-handle_call({return, Spot}, From, #state{vacant = Vacant} = State) ->
+handle_call({return, Spot}, _From, #state{vacant = Vacant} = State) ->
     {reply, returned, State#state{vacant = lists:usort([Spot | Vacant])}};
 
-handle_call(Msg, From, State) ->
+handle_call(_Msg, _From, State) ->
     {reply, erroneous_msg, State}.
 
-handle_cast(Msg, State) ->
+handle_cast(_Msg, State) ->
     {noreply, State}.
 
-handle_info(Info, State) ->
+handle_info(_Info, State) ->
     {noreply, State}.

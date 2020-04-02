@@ -2,6 +2,7 @@
 
 -export([start/1]).
 
+-spec start(string()) -> ok.
 start(FileName) ->
     application:ensure_all_started(parking_lot),
     if FileName =/= [''] ->

@@ -2,6 +2,7 @@
 
 -export([start/1]).
 
+-spec start(string()) -> ok.
 start(FileName) ->
     {ok, File} = file:open(FileName, [read]),
     read(File).
@@ -13,7 +14,8 @@ read(File) ->
         {ok, Line} ->
             [FuncStr | Tail] = string:tokens(Line -- "\n", " "),
             if FuncStr == "create_parking_lot" ->
-                read:process(FuncStr, Tail);
+                [Elem] = Tail,
+                read:process(FuncStr, [list_to_integer(Elem)]);
             true ->
                 spawn(fun() -> read:process(FuncStr, Tail) end)
             end,

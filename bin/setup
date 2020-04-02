@@ -15,6 +15,6 @@ else
 fi
 cd $DIR/../parking_lot/
 ./rebar3 compile
-./rebar3 eunit --module=spot,fread,read,sequence,utils --cover
+./rebar3 eunit --module=spot_sup,spot,fread,read,sequence,utils --cover
 ./rebar3 cover --verbose
 cd -

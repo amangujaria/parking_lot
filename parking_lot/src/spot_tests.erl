@@ -2,23 +2,7 @@
 
 -include_lib("eunit/include/eunit.hrl").
 
-parking_test_() ->
-    {
-    setup,
-    fun() -> application:ensure_all_started(parking_lot) end,
-    fun(_) -> application:stop(parking_lot) end,
-    [park_test_(),
-     park_error_test_()]}.
-
-wrong_input_test_() ->
-    {
-    setup,
-    fun() -> application:ensure_all_started(parking_lot) end,
-    fun(_) -> application:stop(parking_lot) end,
-    [wrong_input_when_parked_test_(),
-     wrong_input_when_vacant_test_()]}.
-
-park_test_() ->
+parking_allowed_test_() ->
     {
     setup,
     fun() -> application:ensure_all_started(parking_lot), spot_sup:start_child(spot1) end,
@@ -26,7 +10,7 @@ park_test_() ->
     [?_assertEqual(permitted, spot:generate_event(spot1, {"KA-01-HH-1234", "White"})),
      ?_assertEqual(permitted, spot:generate_event(spot1, vacate))]}.
 
-park_error_test_() ->
+parking_denied_test_() ->
     {
     setup,
     fun() -> application:ensure_all_started(parking_lot), spot_sup:start_child(spot1) end,
