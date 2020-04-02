@@ -13,9 +13,11 @@ read(File) ->
         {ok, "\n"} -> read(File);
         {ok, Line} ->
             [FuncStr | Tail] = string:tokens(Line -- "\n", " "),
-            if FuncStr == "create_parking_lot" ->
+            if FuncStr == "create_parking_lot" andalso length(Tail) == 1 ->
                 [Elem] = Tail,
                 read:process(FuncStr, [list_to_integer(Elem)]);
+            FuncStr == "create_parking_lot" ->
+                ok;
             true ->
                 spawn(fun() -> read:process(FuncStr, Tail) end)
             end,

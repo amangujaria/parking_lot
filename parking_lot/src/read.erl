@@ -13,9 +13,11 @@ read_stdin() ->
             Tokens = string:tokens(Line -- "\n", " "),
             if Tokens =/= [] ->
                 [FuncStr | Tail] = string:tokens(Line -- "\n", " "),
-                if FuncStr == "create_parking_lot" ->
+                if FuncStr == "create_parking_lot" andalso length(Tail) == 1 ->
                     [Elem] = Tail,
                     process(FuncStr, [list_to_integer(Elem)]);
+                FuncStr == "create_parking_lot" ->
+                    ok;
                 true ->
                     spawn(fun() -> process(FuncStr, Tail) end)
                 end;
