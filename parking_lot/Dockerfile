@@ -5,6 +5,11 @@ ENV REFRESHED_AT=2018-08-16 \
     HOME=/opt/build \
     TERM=xterm
 
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
+  && tar xzvf docker-17.04.0-ce.tgz \
+  && mv docker/docker /usr/local/bin \
+  && rm -r docker docker-17.04.0-ce.tgz
+
 WORKDIR /opt/build
 COPY _build/prod/rel/parking_lot/*.tar.gz /opt/build/
 COPY start.sh /opt/build/
