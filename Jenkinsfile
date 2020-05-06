@@ -10,9 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        dir("parking_lot"){
-            app = docker.build("agujaria/images:service")
-        }
+        app = docker.build("agujaria/images:service", "parking_lot/")
     }
 
     stage('Test image') {
