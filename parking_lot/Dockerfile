@@ -15,7 +15,10 @@ RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz
   && chmod 777 /var/run/docker.sock
 
 WORKDIR /opt/build
-COPY _build/prod/rel/parking_lot/*.tar.gz /opt/build/
+COPY src/ /opt/build/
+COPY rebar.config /opt/build
+COPY rebar3 /opt/build
+RUN ./rebar3 as prod tar
 COPY start.sh /opt/build/
 
 RUN \
