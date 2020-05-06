@@ -6,10 +6,8 @@ ENV REFRESHED_AT=2018-08-16 \
     TERM=xterm
 
 WORKDIR /opt/build
-RUN cd parking_lot
-RUN ./rebar compile
-RUN ./rebar3 as prod tar
 COPY _build/prod/rel/parking_lot/*.tar.gz /opt/build/
+COPY start.sh /opt/build/
 
 RUN \
   apt-get update -y && \
