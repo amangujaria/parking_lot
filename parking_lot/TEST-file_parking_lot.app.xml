@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="142" failures="0" errors="0" skipped="0" time="0.557" name="file &quot;parking_lot.app&quot;">
+  <testcase time="0.003" name="fread_tests:6 file_read_test_ (module 'fread_tests')">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.001" name="fread_tests:6 file_read_test_ (module 'fread_tests')">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.013" name="read_tests:8 create_lot_test_">
+    <system-out>Created a parking lot with 1000 slots
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:11 create_lot_failure_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:17 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:18 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:19 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:20 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:21 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:22 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:23 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:24 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:25 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:26 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:27 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:33 correct_test_">
+    <system-out>Allocated slot number: 1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:34 correct_test_">
+    <system-out>Slot No.	Registration No.	Colour
+1		KA-01-1234		White
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:35 correct_test_">
+    <system-out>KA-01-1234
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:36 correct_test_">
+    <system-out>No "Blue" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:37 correct_test_">
+    <system-out>1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:38 correct_test_">
+    <system-out>No "Blue" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:39 correct_test_">
+    <system-out>1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:40 correct_test_">
+    <system-out>Not found
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:41 correct_test_">
+    <system-out>Slot number 1 is free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:42 correct_test_">
+    <system-out>Slot number 2 is already free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:43 correct_test_">
+    <system-out>no such slot exists in the lot 
+
+    </system-out>
+  </testcase>
+  <testcase time="0.010" name="read_tests:8 create_lot_test_">
+    <system-out>Created a parking lot with 1000 slots
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:11 create_lot_failure_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:17 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:18 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:19 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:20 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:21 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:22 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:23 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:24 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:25 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:26 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:27 incorrect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:33 correct_test_">
+    <system-out>Allocated slot number: 1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:34 correct_test_">
+    <system-out>Slot No.	Registration No.	Colour
+1		KA-01-1234		White
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:35 correct_test_">
+    <system-out>KA-01-1234
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:36 correct_test_">
+    <system-out>No "Blue" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:37 correct_test_">
+    <system-out>1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:38 correct_test_">
+    <system-out>No "Blue" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:39 correct_test_">
+    <system-out>1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:40 correct_test_">
+    <system-out>Not found
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:41 correct_test_">
+    <system-out>Slot number 1 is free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:42 correct_test_">
+    <system-out>Slot number 2 is already free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="read_tests:43 correct_test_">
+    <system-out>no such slot exists in the lot 
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:9 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:15 create_error_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:16 create_error_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:17 create_error_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:23 no_space_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:29 find_vacant_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:35 return_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:36 return_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:37 return_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:9 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:15 create_error_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:16 create_error_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:17 create_error_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:23 no_space_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:29 find_vacant_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:35 return_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:36 return_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="sequence_tests:37 return_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:10 parking_allowed_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:11 parking_allowed_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:18 parking_denied_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:19 parking_denied_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:20 parking_denied_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:27 no_effect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:34 wrong_input_when_parked_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:35 wrong_input_when_parked_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:36 wrong_input_when_parked_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:43 wrong_input_when_vacant_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:50 nonexistent_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:51 nonexistent_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:52 nonexistent_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_sup_tests:9 start_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_sup_tests:9 start_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:10 parking_allowed_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:11 parking_allowed_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:18 parking_denied_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:19 parking_denied_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:20 parking_denied_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:27 no_effect_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:34 wrong_input_when_parked_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:35 wrong_input_when_parked_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:36 wrong_input_when_parked_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:43 wrong_input_when_vacant_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:50 nonexistent_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:51 nonexistent_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="spot_tests:52 nonexistent_spot_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.001" name="utils_tests:9 create_test_">
+    <system-out>Created a parking lot with 5 slots
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:10 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:11 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:12 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:18 park_test_">
+    <system-out>Allocated slot number: 1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.001" name="utils_tests:24 park_nospace_created_test_">
+    <system-out>Sorry, parking lot is full
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:30 park_nospace_available_test_">
+    <system-out>Allocated slot number: 1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:31 park_nospace_available_test_">
+    <system-out>Sorry, parking lot is full
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:37 leave_occupied_space_test_">
+    <system-out>Slot number 1 is free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:43 leave_unoccupied_space_test_">
+    <system-out>Slot number 2 is already free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.001" name="utils_tests:49 registration_numbers_test_">
+    <system-out>KA-01-1235
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:55 registration_numbers_multiple_test_">
+    <system-out>KA-01-1236, KA-01-1234
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:61 registration_numbers_failure_test_">
+    <system-out>No "Black" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:67 slot_numbers_test_">
+    <system-out>2
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:73 slot_numbers_multiple_test_">
+    <system-out>1, 3
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:79 slot_numbers_failure_test_">
+    <system-out>No "Black" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:85 find_slot_by_reg_number_test_">
+    <system-out>2
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:91 find_slot_by_reg_number_failure_test_">
+    <system-out>Not found
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:97 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:98 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:99 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:100 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:101 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:9 create_test_">
+    <system-out>Created a parking lot with 5 slots
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:10 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:11 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:12 create_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:18 park_test_">
+    <system-out>Allocated slot number: 1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:24 park_nospace_created_test_">
+    <system-out>Sorry, parking lot is full
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:30 park_nospace_available_test_">
+    <system-out>Allocated slot number: 1
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:31 park_nospace_available_test_">
+    <system-out>Sorry, parking lot is full
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:37 leave_occupied_space_test_">
+    <system-out>Slot number 1 is free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:43 leave_unoccupied_space_test_">
+    <system-out>Slot number 2 is already free
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:49 registration_numbers_test_">
+    <system-out>KA-01-1235
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:55 registration_numbers_multiple_test_">
+    <system-out>KA-01-1236, KA-01-1234
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:61 registration_numbers_failure_test_">
+    <system-out>No "Black" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:67 slot_numbers_test_">
+    <system-out>2
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:73 slot_numbers_multiple_test_">
+    <system-out>1, 3
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:79 slot_numbers_failure_test_">
+    <system-out>No "Black" cars in parking lot currently
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:85 find_slot_by_reg_number_test_">
+    <system-out>2
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:91 find_slot_by_reg_number_failure_test_">
+    <system-out>Not found
+
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:97 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:98 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:99 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:100 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+  <testcase time="0.000" name="utils_tests:101 find_parking_spot_credentials_test_">
+    <system-out>
+    </system-out>
+  </testcase>
+</testsuite>
