@@ -8,11 +8,11 @@ node {
     }
 
     stage('Build') {
-        echo 'Building'
+        sh 'cd parking_lot && ./rebar3 compile'
     }
 
     stage('Test') {
-        echo 'Testing'
+        sh 'cd parking_lot && ./rebar3 eunit'
     }
 
 }
