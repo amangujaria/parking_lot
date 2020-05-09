@@ -12,7 +12,7 @@ node {
     }
 
     stage('Test') {
-        echo 'Testing'
+        sh 'cd parking_lot && ./rebar3 eunit'
     }
 
 }
